@@ -9,7 +9,7 @@ Provides a slim image with php cli and the [deployer PHP](https://deployer.org/)
 
 ### Installed tools
 
-Deployer PHP with its recipes, RSync, Git, Open SSH tools
+Deployer PHP 4 with its recipes 4, RSync, Git, Open SSH tools
 
 
 ### Available commands
