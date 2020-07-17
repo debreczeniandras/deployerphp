@@ -6,4 +6,5 @@ RUN apk update && apk add --no-cache rsync git openssh
 
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
-RUN composer global require "deployer/deployer:^5" "deployer/recipes:^4" --ignore-platform-reqs --no-suggest --no-interaction --prefer-dist --no-scripts --no-progress && ln -s /root/.composer/vendor/bin/dep /usr/bin/dep
+RUN composer global require "deployer/deployer:^3" "deployer/recipes:^3" --ignore-platform-reqs --no-suggest --no-interaction --prefer-dist --no-scripts --no-progress && ln -s /root/.composer/vendor/bin/dep /usr/bin/dep
+
