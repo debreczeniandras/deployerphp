@@ -1,5 +1,7 @@
 FROM php:7-cli-alpine
 
+LABEL maintainer="github@debreczeniandras.hu"
+
 RUN apk update && apk add --no-cache rsync git openssh
 
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
