@@ -9,7 +9,7 @@ Provides a slim image with php cli and the [deployer PHP](https://deployer.org/)
 
 ### Installed tools
 
-Deployer PHP with its recipes, RSync, Git, Open SSH tools
+Deployer PHP version 5 with recipes 4, RSync, Git, Open SSH tools
 
 
 ### Available commands
@@ -25,10 +25,22 @@ Deployer PHP with its recipes, RSync, Git, Open SSH tools
 
 The documentation for deployer be found [here](https://deployer.org/). 
 
-### Use this image
+### Use this image with docker run
 
 Entrypoint is the `dep` tool.
 
     docker run -it debreczeniandras/deployerphp --version
     docker run -it debreczeniandras/deployerphp deploy
 
+### Use it in gitlab CI
+
+In Gitlab CI override the default entrypoint, to get a shell.
+        
+    deploy:staging:
+      image:
+        name: debreczeniandras/deployerphp:6
+        entrypoint: [""]
+      script:
+        - dep deploy staging -v
+      only:
+        - master
