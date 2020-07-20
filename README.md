@@ -38,7 +38,7 @@ In Gitlab CI override the default entrypoint, to get a shell.
         
     deploy:staging:
       image:
-        name: debreczeniandras/deployerphp:6
+        name: debreczeniandras/deployerphp:6.1
         entrypoint: [""]
       script:
         - dep deploy staging -v
