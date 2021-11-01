@@ -1,6 +1,10 @@
 ## Deployer PHP Docker Image
 
-Based on php latest 7 CLI Alpine and composer:latest.
+Based on php latest 7 CLI Alpine and composer version 2.
+
+## Docker Hub
+
+The relevant image will be built on [docker hub](https://hub.docker.com/r/debreczeniandras/deployerphp).
 
 ### Purpose
 
