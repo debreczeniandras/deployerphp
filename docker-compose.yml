@@ -10,7 +10,7 @@ services:
       context: .
       dockerfile: Dockerfile.6
   v7:
-    image: debreczeniandras/deployerphp:7-beta
+    image: debreczeniandras/deployerphp:7-rc2
     build:
       context: .
       dockerfile: Dockerfile.7
